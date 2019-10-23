@@ -18,14 +18,13 @@ public class TestSkrivFil {
 	public void testskriv() {
 		
 		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10-2019","en tekst");
-		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10-2019","http://www.picture.com/oo.jpg");
+		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10-2019","et bilde","http://www.picture.com/oo.jpg");
 		
 		Blogg samling = new Blogg();
 		
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);
 		
-		// TODO: add test for content
 		assertTrue(SkrivFil.skriv(samling, FILNAVN));
 	}	
 }

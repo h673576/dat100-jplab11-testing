@@ -19,7 +19,7 @@ public class TestLesFil {
 		Blogg samling = LesFil.les(FILNAVN);
 
 		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10-2019","en tekst");
-		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10-2019","http://www.picture.com/oo.jpg");
+		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10-2019","et bilde","http://www.picture.com/oo.jpg");
 		
 		assertEquals(samling.getAntall(),2);
 		assertTrue(samling.finnes(innlegg1));

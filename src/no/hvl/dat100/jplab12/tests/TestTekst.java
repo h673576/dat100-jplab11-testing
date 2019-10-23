@@ -8,7 +8,7 @@ import no.hvl.dat100.jplab12.oppgave2.*;
 public class TestTekst {
 	
 	@Test
-	public void testConstructor() {
+	public void testConstructor1() {
 		Tekst tekst = new Tekst(1,"Ole Olsen", "23-10-2019","en tekst");
 		
 		assertEquals("Ole Olsen",tekst.getBruker());
@@ -18,15 +18,24 @@ public class TestTekst {
 		assertEquals("en tekst",tekst.getTekst());
 	}
 
-	// TODO - also test second constructor
+	@Test
+	public void testConstructor2() {
+		Tekst tekst = new Tekst(1,"Ole Olsen", "23-10-2019",7,"en tekst");
+		
+		assertEquals("Ole Olsen",tekst.getBruker());
+		assertEquals(1,tekst.getId());
+		assertEquals(7,tekst.getLikes());
+		assertEquals("23-10-2019",tekst.getDato());
+		assertEquals("en tekst",tekst.getTekst());
+	}
 	
 	@Test
 	public void testSet() {
-		Tekst tekst = new Tekst();
+		Tekst tekst = new Tekst(1,"Ole Olsen", "23-10-2019","en tekst");
 		
-		tekst.setTekst("en tekst");
+		tekst.setTekst("ny tekst");
 
-		assertEquals("en tekst",tekst.getTekst());
+		assertEquals("ny tekst",tekst.getTekst());
 
 	}
 	
@@ -34,7 +43,7 @@ public class TestTekst {
 	public void testToString() {
 		Tekst tekst = new Tekst(1,"Ole Olsen", "23-10-2019","en tekst");
 		
-		String str = "TEKST\n1: Ole Olsen [23-10-2019] 0\nen tekst\n";
+		String str = "TEKST\n1\nOle Olsen\n23-10-2019\n0\nen tekst\n";
 		
 		assertEquals(str,tekst.toString());
 	}

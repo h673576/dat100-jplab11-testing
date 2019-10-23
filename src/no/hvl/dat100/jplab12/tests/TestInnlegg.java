@@ -28,13 +28,14 @@ public class TestInnlegg {
 	
 	@Test
 	public void testSet() {
-		TInnlegg innlegg = new TInnlegg();
 		
-		innlegg.setBruker("Ole Olsen");
-		innlegg.setDato("23-10-2019");
+		TInnlegg innlegg = new TInnlegg(1,"Ole Olsen","23-10-2019",7);
+
+		innlegg.setBruker("Oline Olsen");
+		innlegg.setDato("24-10-2019");
 		
-		assertEquals("Ole Olsen",innlegg.getBruker());
-		assertEquals("23-10-2019",innlegg.getDato());
+		assertEquals("Oline Olsen",innlegg.getBruker());
+		assertEquals("24-10-2019",innlegg.getDato());
 	}
 	
 	@Test
@@ -66,7 +67,7 @@ public class TestInnlegg {
 		
 		TInnlegg innlegg = new TInnlegg(1,"Ole Olsen","23-10-2019");
 
-		assertEquals("1: Ole Olsen [23-10-2019] 0\n",innlegg.toString());
+		assertEquals("1\nOle Olsen\n23-10-2019\n0\n",innlegg.toString());
 
 	}
 }
