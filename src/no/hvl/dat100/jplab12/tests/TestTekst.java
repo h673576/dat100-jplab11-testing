@@ -18,6 +18,8 @@ public class TestTekst {
 		assertEquals("en tekst",tekst.getTekst());
 	}
 
+	// TODO - also test second constructor
+	
 	@Test
 	public void testSet() {
 		Tekst tekst = new Tekst();

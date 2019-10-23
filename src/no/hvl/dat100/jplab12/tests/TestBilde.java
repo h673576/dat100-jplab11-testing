@@ -20,6 +20,8 @@ public class TestBilde {
 		assertEquals("http://www.picture.com/oo.jpg",bilde.getUrl());
 	}
 
+	// TODO - also test second constructor
+
 	@Test
 	public void testSet() {
 		Bilde bilde = new Bilde();
@@ -33,7 +35,7 @@ public class TestBilde {
 	public void testToString() {
 		Bilde bilde = new Bilde(1,"Ole Olsen", "23-10-2019","http://www.picture.com/oo.jpg");
 		
-		String str = "BILDE\n1: Ole Olsen [23-10-2019] 0\nhttp://www.picture.com/oo.jpg\n";;
+		String str = "BILDE\n1: Ole Olsen [23-10-2019] 0\nhttp://www.picture.com/oo.jpg\n";
 		
 		assertEquals(str,bilde.toString(),str);
 	}

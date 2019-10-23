@@ -7,7 +7,7 @@ import org.junit.Test;
 public class TestInnlegg {
 
 	@Test
-	public void testConstructor() {
+	public void testConstructor1() {
 		TInnlegg innlegg = new TInnlegg(1,"Ole Olsen","23-10-2019");
 		
 		assertEquals("Ole Olsen",innlegg.getBruker());
@@ -16,6 +16,16 @@ public class TestInnlegg {
 		assertEquals("23-10-2019",innlegg.getDato()); 
 	}
 
+	@Test
+	public void testConstructor2() {
+		TInnlegg innlegg = new TInnlegg(1,"Ole Olsen","23-10-2019",7);
+		
+		assertEquals("Ole Olsen",innlegg.getBruker());
+		assertEquals(1,innlegg.getId());
+		assertEquals(7,innlegg.getLikes());	
+		assertEquals("23-10-2019",innlegg.getDato()); 
+	}
+	
 	@Test
 	public void testSet() {
 		TInnlegg innlegg = new TInnlegg();

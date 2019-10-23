@@ -12,4 +12,8 @@ public class TInnlegg extends Innlegg {
 		super(id, bruker,dato);
 	}
 
+	public TInnlegg(int id, String bruker, String dato, int likes) {
+		super(id, bruker,dato,likes);
+	}
+
 }
