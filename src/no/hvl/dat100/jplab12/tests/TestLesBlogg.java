@@ -11,7 +11,7 @@ import no.hvl.dat100.jplab12.oppgave5.LesBlogg;
 
 public class TestLesBlogg {
 
-	private static String FILNAVN = "bloggcorrect.dat";
+	private static String FILNAVN = "bloggkorrect.dat";
 	
 	@Test
 	public void testles() {
