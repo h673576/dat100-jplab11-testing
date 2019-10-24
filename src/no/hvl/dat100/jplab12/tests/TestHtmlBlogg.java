@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import no.hvl.dat100.jplab12.oppgave2.Bilde;
 import no.hvl.dat100.jplab12.oppgave2.Tekst;
-import no.hvl.dat100.jplab12.oppgave4.SkrivFil;
+import no.hvl.dat100.jplab12.oppgave4.SkrivBlogg;
 import no.hvl.dat100.jplab12.oppgave6.HtmlBlogg;
 
 class TestHtmlBlogg {
@@ -26,6 +26,6 @@ private static String FILNAVN = "blogg.html";
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);
 		
-		assertTrue(SkrivFil.skriv(samling, FILNAVN));
+		assertTrue(SkrivBlogg.skriv(samling, FILNAVN));
 	}	
 }

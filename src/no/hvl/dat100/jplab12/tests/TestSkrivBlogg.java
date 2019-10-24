@@ -10,7 +10,7 @@ import no.hvl.dat100.jplab12.oppgave2.Tekst;
 import no.hvl.dat100.jplab12.oppgave4.*;
 import no.hvl.dat100.jplab12.oppgave3.*;
 
-public class TestSkrivFil {
+public class TestSkrivBlogg {
 
 	private static String FILNAVN = "blogg.dat";
 	
@@ -25,6 +25,6 @@ public class TestSkrivFil {
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);
 		
-		assertTrue(SkrivFil.skriv(samling, FILNAVN));
+		assertTrue(SkrivBlogg.skriv(samling, FILNAVN));
 	}	
 }
