@@ -7,6 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/jplab12-complete"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jplab12-startkode"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
