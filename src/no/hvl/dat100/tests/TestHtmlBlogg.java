@@ -13,7 +13,8 @@ import no.hvl.dat100.jplab11.oppgave6.HtmlBlogg;
 
 class TestHtmlBlogg {
 
-private static String FILNAVN = "blogg.html";
+	private static String MAPPE = System.getProperty("user.dir") + "/src/no/hvl/dat100/tests/";
+	private static String FILNAVN = "blogg.html";
 	
 	@Test
 	public void testskriv() {
@@ -26,6 +27,6 @@ private static String FILNAVN = "blogg.html";
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);
 		
-		assertTrue(SkrivBlogg.skriv(samling, FILNAVN));
+		assertTrue(SkrivBlogg.skriv(samling, MAPPE, FILNAVN));
 	}	
 }

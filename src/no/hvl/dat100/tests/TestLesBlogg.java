@@ -11,12 +11,14 @@ import no.hvl.dat100.jplab11.oppgave5.LesBlogg;
 
 public class TestLesBlogg {
 
+	private static String MAPPE = System.getProperty("user.dir") + "/src/no/hvl/dat100/tests/";
+
 	private static String FILNAVN = "bloggkorrect.dat";
 	
 	@Test
 	public void testles() {
 		
-		Blogg samling = LesBlogg.les(FILNAVN);
+		Blogg samling = LesBlogg.les(MAPPE,FILNAVN);
 
 		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10-2020","en tekst");
 		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10-2020","et bilde","http://www.picture.com/oo.jpg");
