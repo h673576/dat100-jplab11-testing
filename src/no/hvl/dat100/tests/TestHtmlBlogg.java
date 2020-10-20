@@ -18,8 +18,8 @@ private static String FILNAVN = "blogg.html";
 	@Test
 	public void testskriv() {
 		
-		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10-2019","DAT100 oppgave 6");
-		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10-2019","HVL logo","https://www.west-norway.no/wp-content/uploads/2018/05/HVL-nettside.jpg");
+		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10-2020","DAT100 oppgave 6");
+		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10-2020","HVL logo","https://www.west-norway.no/wp-content/uploads/2018/05/HVL-nettside.jpg");
 		
 		HtmlBlogg samling = new HtmlBlogg();
 		
