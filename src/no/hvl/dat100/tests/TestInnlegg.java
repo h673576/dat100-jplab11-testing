@@ -1,4 +1,4 @@
-package no.hvl.dat100.jplab12.tests;
+package no.hvl.dat100.tests;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package no.hvl.dat100.jplab12.tests;
+package no.hvl.dat100.tests;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.*;
@@ -6,10 +6,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-import no.hvl.dat100.jplab12.oppgave2.Bilde;
-import no.hvl.dat100.jplab12.oppgave2.Tekst;
-import no.hvl.dat100.jplab12.oppgave4.SkrivBlogg;
-import no.hvl.dat100.jplab12.oppgave6.HtmlBlogg;
+import no.hvl.dat100.jplab11.oppgave2.Bilde;
+import no.hvl.dat100.jplab11.oppgave2.Tekst;
+import no.hvl.dat100.jplab11.oppgave4.SkrivBlogg;
+import no.hvl.dat100.jplab11.oppgave6.HtmlBlogg;
 
 class TestHtmlBlogg {
 

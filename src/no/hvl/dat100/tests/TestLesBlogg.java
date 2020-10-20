@@ -1,13 +1,13 @@
-package no.hvl.dat100.jplab12.tests;
+package no.hvl.dat100.tests;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import no.hvl.dat100.jplab12.oppgave2.Bilde;
-import no.hvl.dat100.jplab12.oppgave2.Tekst;
-import no.hvl.dat100.jplab12.oppgave3.Blogg;
-import no.hvl.dat100.jplab12.oppgave5.LesBlogg;
+import no.hvl.dat100.jplab11.oppgave2.Bilde;
+import no.hvl.dat100.jplab11.oppgave2.Tekst;
+import no.hvl.dat100.jplab11.oppgave3.Blogg;
+import no.hvl.dat100.jplab11.oppgave5.LesBlogg;
 
 public class TestLesBlogg {
 

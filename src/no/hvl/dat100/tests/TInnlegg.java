@@ -1,6 +1,6 @@
-package no.hvl.dat100.jplab12.tests;
+package no.hvl.dat100.tests;
 
-import no.hvl.dat100.jplab12.oppgave1.Innlegg;
+import no.hvl.dat100.jplab11.oppgave1.Innlegg;
 
 public class TInnlegg extends Innlegg {
 	

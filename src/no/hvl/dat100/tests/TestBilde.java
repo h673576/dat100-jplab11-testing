@@ -1,10 +1,10 @@
-package no.hvl.dat100.jplab12.tests;
+package no.hvl.dat100.tests;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import no.hvl.dat100.jplab12.oppgave2.*;
+import no.hvl.dat100.jplab11.oppgave2.*;
 
 public class TestBilde {
 	
