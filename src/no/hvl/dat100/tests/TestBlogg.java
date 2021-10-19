@@ -31,9 +31,9 @@ public class TestBlogg {
 	public void testleggTil() {
 		Blogg samling = new Blogg(40);
 	
-		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10-2019");
-		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10-2019");
-		TInnlegg innlegg3 = new TInnlegg(3,"Oda Olsen","24-10-2019");
+		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10");
+		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10");
+		TInnlegg innlegg3 = new TInnlegg(3,"Oda Olsen","24-10");
 		
 		assertTrue(samling.leggTil(innlegg1));
 		assertTrue(samling.leggTil(innlegg2));
@@ -54,8 +54,8 @@ public class TestBlogg {
 		Blogg samling1 = new Blogg(40);
 		Blogg samling2 = new Blogg(2);
 		
-		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10-2019");
-		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10-2019");
+		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10");
+		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10");
 		
 		samling1.leggTil(innlegg1);
 		samling1.leggTil(innlegg2);
@@ -71,8 +71,8 @@ public class TestBlogg {
 	public void testutvid() {
 		Blogg samling = new Blogg(2);
 		
-		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10-2019");
-		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10-2019");
+		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10");
+		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10");
 
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);
@@ -93,8 +93,8 @@ public class TestBlogg {
 	
 		Blogg samling = new Blogg(2);
 		
-		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10-2019");
-		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10-2019");
+		TInnlegg innlegg1 = new TInnlegg(1,"Ole Olsen","23-10");
+		TInnlegg innlegg2 = new TInnlegg(2,"Oline Olsen","24-10");
 
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);
@@ -114,15 +114,15 @@ public class TestBlogg {
 	public void testtoString() {
 		Blogg samling = new Blogg(2);
 		
-		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10-2019","en tekst");
-		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10-2019","et bilde","http://www.picture.com/oo.jpg");
+		Tekst innlegg1 = new Tekst(1,"Ole Olsen","23-10","en tekst");
+		Bilde innlegg2 = new Bilde(2,"Oline Olsen","24-10","et bilde","http://www.picture.com/oo.jpg");
 
 		samling.leggTil(innlegg1);
 		samling.leggTil(innlegg2);
 		
 		String str = "2\n" + 
-				"TEKST\n1\nOle Olsen\n23-10-2019\n0\nen tekst\n" + 
-				"BILDE\n2\nOline Olsen\n24-10-2019\n0\net bilde\nhttp://www.picture.com/oo.jpg\n";
+				"TEKST\n1\nOle Olsen\n23-10\n0\nen tekst\n" + 
+				"BILDE\n2\nOline Olsen\n24-10\n0\net bilde\nhttp://www.picture.com/oo.jpg\n";
 		
 		assertEquals(str,samling.toString());
 		
