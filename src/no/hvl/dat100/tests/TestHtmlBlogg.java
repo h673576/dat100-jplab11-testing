@@ -1,9 +1,6 @@
 package no.hvl.dat100.tests;
 
-import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.*;
-
-
 import org.junit.jupiter.api.Test;
 
 import no.hvl.dat100.jplab11.oppgave2.Bilde;

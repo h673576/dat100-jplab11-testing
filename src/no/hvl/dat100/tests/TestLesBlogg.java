@@ -1,8 +1,7 @@
 package no.hvl.dat100.tests;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 import no.hvl.dat100.jplab11.oppgave2.Bilde;
 import no.hvl.dat100.jplab11.oppgave2.Tekst;
@@ -13,7 +12,7 @@ public class TestLesBlogg {
 
 	private static String MAPPE = System.getProperty("user.dir") + "/src/no/hvl/dat100/tests/";
 
-	private static String FILNAVN = "bloggkorrect.dat";
+	private static String FILNAVN = "bloggkorrekt.dat";
 	
 	@Test
 	public void testles() {
